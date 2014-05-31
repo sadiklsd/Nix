@@ -8,7 +8,9 @@ mount /dev/disk/by-label/nixos /mnt
 nixos-generate-config --root /mnt
 cp configuration.nix /mnt/etc/nixos/configuration.nix
 nix-env -u git
-nix-install
+nixos-install
+
+
 
 echo "nixxin:test" |chpasswd
 
