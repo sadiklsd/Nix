@@ -37,7 +37,7 @@ networking.firewall.enable =true ;
 # List packages installed in system profile. To search by name, run:
 # -env -qaP | grep wget
 environment.systemPackages = with pkgs; [
-
+java
 #ruby
 wget
 #htop
@@ -45,17 +45,17 @@ gitFull
 #firefoxWrapper 
 #unrar
 #vim
-#icedtea7_web 
+icedtea7_web 
 busybox
 #p7zip
 #openvpn
-#openjdk
+openjdk
 #gparted
 #dmenu
 #zsh
-#autoconf
+autoconf
 #xorg.xkill
-#automake
+automake
 #nixops
 #gcc 
 #mercurial 

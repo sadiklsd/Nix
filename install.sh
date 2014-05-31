@@ -19,7 +19,11 @@ wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearc
 tar -xzvf elasticsearch-1.2.0.tar.gz
 rm -f elasticsearch-1.2.0.tar.gz
 
-#alias mix='/apps/bin/mix'
 nixos-install
 echo "Enter New Root Password:"
 passwd
+useradd -m nixxin
+echo "nixxin:test" |chpasswd
+
+echo "alias mix='/apps/bin/mix'">> /home/nixxin/.bashrc
+
