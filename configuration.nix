@@ -38,31 +38,30 @@ networking.firewall.enable =true ;
 # -env -qaP | grep wget
 environment.systemPackages = with pkgs; [
 
-ruby
+#ruby
 wget
-htop
+#htop
 gitFull
-firefoxWrapper 
-unrar
-vim
-icedtea7_web 
+#firefoxWrapper 
+#unrar
+#vim
+#icedtea7_web 
 busybox
-p7zip
-openvpn
-openjdk
-gparted
-sudo
-dmenu
-zsh
-autoconf
-xorg.xkill
-automake
-nixops
-gcc 
-mercurial 
-bzip2
-python
-lynx
+#p7zip
+#openvpn
+#openjdk
+#gparted
+#dmenu
+#zsh
+#autoconf
+#xorg.xkill
+#automake
+#nixops
+#gcc 
+#mercurial 
+#bzip2
+#python
+#lynx
 ];
 
 # List services that you want to enable:

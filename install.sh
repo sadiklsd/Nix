@@ -11,7 +11,3 @@ nix-env -u git
 nixos-install
 
 
-
-echo "nixxin:test" |chpasswd
-
-
