@@ -7,7 +7,15 @@ fdisk -l /dev/sda
 mount /dev/disk/by-label/nixos /mnt
 nixos-generate-config --root /mnt
 cp configuration.nix /mnt/etc/nixos/configuration.nix
-nix-env -u git
+echo "root:toor"|chpasswd
 nixos-install
-
-
+echo "nixxin:test"|chpasswd
+cd /
+mkdir apps
+cd apps
+git clone https://github.com/elixir-lang/elixir
+git clone https://github.com/elixir-lang/dynamo
+nix-env -i wget
+wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.2.0.tar.gz
+tar -xzvf elasticsearch-1.2.0.tar.gz
+alias mix='/apps/bin/mix'
