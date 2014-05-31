@@ -6,7 +6,10 @@ mke2fs -L nixos -t ext4 /dev/sda1
 fdisk -l /dev/sda
 mount /dev/disk/by-label/nixos /mnt
 nixos-generate-config --root /mnt
-
-
+cp configuration.nix /mnt/etc/nixos/configuration.nix
+nix-env -u git
+nix-install
 
 echo "nixxin:test" |chpasswd
+
+reboot
