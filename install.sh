@@ -21,5 +21,5 @@ rm -f elasticsearch-1.2.0.tar.gz
 
 #alias mix='/apps/bin/mix'
 nixos-install
-Echo "Enter New Root Password:"
+echo "Enter New Root Password:"
 passwd
