@@ -1,6 +1,6 @@
 nix-env -i wget
-echo -e "d\nw" |fdisk /dev/sda
 umount -a
+echo -e "d\nw" |fdisk /dev/sda
 fdisk -l /dev/sda
 echo -e "o\nn\np\n1\n\n\nw" | fdisk /dev/sda
 mke2fs -L nixos -t ext4 /dev/sda1
