@@ -12,4 +12,4 @@ nix-install
 
 echo "nixxin:test" |chpasswd
 
-reboot
+
