@@ -8,15 +8,18 @@ fdisk -l /dev/sda
 mount /dev/disk/by-label/nixos /mnt
 nixos-generate-config --root /mnt
 cp configuration.nix /mnt/etc/nixos/configuration.nix
-echo "root:toor"|chpasswd
 
 cd /mnt/
 mkdir apps
 cd apps
+pwd
 git clone https://github.com/elixir-lang/elixir
 git clone https://github.com/elixir-lang/dynamo
 wget https://download.elasticsearch.org/elasticsearch/elasticsearch/elasticsearch-1.2.0.tar.gz
 tar -xzvf elasticsearch-1.2.0.tar.gz
+rm -f elasticsearch-1.2.0.tar.gz
+
 #alias mix='/apps/bin/mix'
 nixos-install
-echo "nixxin:test"|chpasswd
+Echo "Enter New Root Password:"
+passwd
