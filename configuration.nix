@@ -31,12 +31,6 @@ networking.firewall.enable =true ;
 # };
 
 
-nixpkgs.config = {
-allowUnfree = true; 
-chromium = {enablePepperFlash = true;};
-
-};
-
 
 
 
@@ -49,7 +43,6 @@ wget
 htop
 gitFull
 firefoxWrapper 
-chromiumWrapper
 unrar
 vim
 icedtea7_web 
@@ -76,7 +69,6 @@ lynx
 
 # Enable the OpenSSH daemon.
 services.openssh.enable = true;
-services.openssh.permitRootLogin = "yes" ;
 
 # Enable CUPS to print documents.
 # services.printing.enable = true;
