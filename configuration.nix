@@ -37,7 +37,6 @@ networking.firewall.enable =true ;
 # List packages installed in system profile. To search by name, run:
 # -env -qaP | grep wget
 environment.systemPackages = with pkgs; [
-java
 #ruby
 wget
 #htop
@@ -73,17 +72,17 @@ services.openssh.enable = true;
 # services.printing.enable = true;
 
 # Enable the X11 windowing system.
-#services.xserver.enable = true;
-#services.xserver.layout = "us";
-#services.xserver.xkbOptions = "eurosign:e";
-#services.xserver.videoDriver = "virtualbox";
+services.xserver.enable = true;
+services.xserver.layout = "us";
+services.xserver.xkbOptions = "eurosign:e";
+services.xserver.videoDriver = "virtualbox";
 
 # Enable the Desktop Environment.
 
-#services.xserver.displayManager.kdm.enable = true; 
-#services.xserver.desktopManager.kde4.enable = true;
+services.xserver.displayManager.kdm.enable = true; 
+services.xserver.desktopManager.kde4.enable = true;
 
-#services.virtualbox.enable = true;
+services.virtualbox.enable = true;
 
 # Define a user account. Don't forget to set a password with ‘passwd’.
 users.extraUsers.guest = {
@@ -94,6 +93,7 @@ uid = 1000;
 createHome = true;
 home = "/home/nixxin";
 shell = "/run/current-system/sw/bin/bash";
+
 };
 
 } 
