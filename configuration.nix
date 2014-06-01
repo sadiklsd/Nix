@@ -63,9 +63,11 @@ bzip2
 #lynx
 gnumake
 cmake
-#erlang-17.0
-#elixir-0.13.2
+erlang
+elixir
 ];
+
+
 
 # List services that you want to enable:
 
