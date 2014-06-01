@@ -55,12 +55,14 @@ openjdk
 autoconf
 #xorg.xkill
 automake
-#nixops
-#gcc 
-#mercurial 
-#bzip2
-#python
+nixops
+gcc 
+mercurial 
+bzip2
+python
 #lynx
+gnumake
+cmake
 ];
 
 # List services that you want to enable:
@@ -72,28 +74,28 @@ services.openssh.enable = true;
 # services.printing.enable = true;
 
 # Enable the X11 windowing system.
-services.xserver.enable = true;
-services.xserver.layout = "us";
-services.xserver.xkbOptions = "eurosign:e";
-services.xserver.videoDriver = "virtualbox";
+#services.xserver.enable = true;
+#services.xserver.layout = "us";
+#services.xserver.xkbOptions = "eurosign:e";
+#services.xserver.videoDriver = "virtualbox";
 
 # Enable the Desktop Environment.
 
 #services.xserver.displayManager.kdm.enable = true; 
 #services.xserver.desktopManager.kde4.enable = true;
-services.xserver.displayManager.slim.enable = true; 
-services.xserver.desktopManager.gnome3.enable = true;
+#services.xserver.displayManager.slim.enable = true; 
+#services.xserver.desktopManager.gnome3.enable = true;
 
 services.virtualbox.enable = true;
 
 # Define a user account. Don't forget to set a password with ‘passwd’.
 users.extraUsers.guest = {
-name = "nixxin";
+name = "test";
 extraGroups = [ "wheel" ];
 group = "users";
 uid = 1000;
 createHome = true;
-home = "/home/nixxin";
+home = "/home/test";
 shell = "/run/current-system/sw/bin/bash";
 
 };
