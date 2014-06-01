@@ -44,7 +44,7 @@ gitFull
 #firefoxWrapper 
 #unrar
 #vim
-icedtea7_web 
+#icedtea7_web 
 busybox
 #p7zip
 #openvpn
@@ -59,7 +59,7 @@ nixops
 gcc 
 mercurial 
 bzip2
-python
+#python
 #lynx
 gnumake
 cmake
