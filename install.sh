@@ -20,5 +20,5 @@ nix-channel --update
 #rm -f elasticsearch-1.2.0.tar.gz
 
 nixos-install
-echo "alias mix='/apps/bin/mix'">> /home/test/.bashrc
+useradd -m test
 
