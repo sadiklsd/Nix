@@ -8,7 +8,7 @@ fdisk -l /dev/sda
 mount /dev/disk/by-label/nixos /mnt
 nixos-generate-config --root /mnt
 cp configuration.nix /mnt/etc/nixos/configuration.nix
-nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixos
+nix-channel --add https://nixos.org/channels/nixpkgs-unstable nixos.unstable
 nix-channel --update
 #mkdir /mnt/apps
 #cd /mnt/apps
