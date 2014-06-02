@@ -58,6 +58,7 @@ automake
 nixops
 gcc 
 mercurial 
+fish
 bzip2
 #python
 #lynx
