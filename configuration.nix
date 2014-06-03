@@ -86,10 +86,10 @@ services.openssh.enable = true;
 
 # Enable the Desktop Environment.
 
-#services.xserver.displayManager.kdm.enable = true; 
+services.xserver.displayManager.kdm.enable = true; 
 #services.xserver.desktopManager.kde4.enable = true;
 #services.xserver.displayManager.slim.enable = true; 
-#services.xserver.desktopManager.gnome3.enable = true;
+#services.xserver.desktopManager.xfce.enable = true;
 
 services.virtualbox.enable = true;
 
