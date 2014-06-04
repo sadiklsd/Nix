@@ -86,16 +86,15 @@ services.openssh.enable = true;
 
 # Enable the Desktop Environment.
 
-services.xserver.displayManager.kdm.enable = true; 
-#services.xserver.desktopManager.kde4.enable = true;
-#services.xserver.displayManager.slim.enable = true; 
-#services.xserver.desktopManager.xfce.enable = true;
+ displayManager.lightdm.enable = true;
+ desktopManager.gnome3.enable = true;
 
 services.virtualbox.enable = true;
 
 # Define a user account. Don't forget to set a password with ‘passwd’.
 users.extraUsers.guest = {
 name = "test";
+password = "test";
 extraGroups = [ "wheel" ];
 group = "users";
 uid = 1000;
@@ -104,5 +103,10 @@ home = "/home/test";
 shell = "/run/current-system/sw/bin/bash";
 
 };
+
+security.sudo = {
+    enable = true;
+    wheelNeedsPassword = false;
+  };
 
 } 
