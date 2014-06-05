@@ -79,10 +79,10 @@ services.openssh.enable = true;
 # services.printing.enable = true;
 
 # Enable the X11 windowing system.
-#services.xserver.enable = true;
-#services.xserver.layout = "us";
-#services.xserver.xkbOptions = "eurosign:e";
-#services.xserver.videoDriver = "virtualbox";
+services.xserver.enable = true;
+services.xserver.layout = "us";
+services.xserver.xkbOptions = "eurosign:e";
+services.xserver.videoDriver = "virtualbox";
 
 # Enable the Desktop Environment.
 
