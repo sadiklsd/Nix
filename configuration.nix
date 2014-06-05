@@ -86,8 +86,8 @@ services.xserver.videoDriver = "virtualbox";
 
 # Enable the Desktop Environment.
 
- displayManager.lightdm.enable = true;
- desktopManager.gnome3.enable = true;
+ services.xserver.displayManager.slim.enable = true;
+ services.xserver.desktopManager.xfce.enable = true;
 
 services.virtualbox.enable = true;
 
