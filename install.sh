@@ -10,4 +10,3 @@ nixos-generate-config --root /mnt
 cp configuration.nix /mnt/etc/nixos/configuration.nix
 cp post.sh /mnt/post.sh
 nixos-install
-reboot
