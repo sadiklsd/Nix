@@ -64,8 +64,8 @@ bzip2
 #lynx
 gnumake
 cmake
-erlang
-elixir
+#erlang
+#elixir
 ];
 
 
