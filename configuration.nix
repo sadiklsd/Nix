@@ -37,7 +37,7 @@ networking.firewall.enable =true ;
 # List packages installed in system profile. To search by name, run:
 # -env -qaP | grep wget
 environment.systemPackages = with pkgs; [
-#ruby
+ruby2
 wget
 #htop
 gitFull
@@ -86,8 +86,8 @@ services.xserver.videoDriver = "virtualbox";
 
 # Enable the Desktop Environment.
 
- services.xserver.displayManager.slim.enable = true;
- services.xserver.desktopManager.xfce.enable = true;
+ services.xserver.displayManager.kdm.enable = true;
+ services.xserver.desktopManager.kde4.enable = true;
 
 services.virtualbox.enable = true;
 
