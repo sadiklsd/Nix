@@ -39,33 +39,35 @@ networking.firewall.enable =true ;
 environment.systemPackages = with pkgs; [
 ruby2
 wget
-#htop
+htop
 gitFull
-#firefoxWrapper 
+firefoxWrapper 
 #unrar
-#vim
+vim
 #icedtea7_web 
 busybox
 #p7zip
 #openvpn
-openjdk
+#openjdk
 #gparted
-#dmenu
+dmenu
 #zsh
 autoconf
 #xorg.xkill
 automake
 nixops
 gcc 
-mercurial 
+#mercurial 
 fish
-bzip2
+#bzip2
 #python
 #lynx
 gnumake
 cmake
-#erlang
+erlang
 #elixir
+gnum4
+libtool
 ];
 
 
@@ -86,7 +88,7 @@ services.xserver.videoDriver = "virtualbox";
 
 # Enable the Desktop Environment.
 
- services.xserver.displayManager.kdm.enable = true;
+ services.xserver.displayManager.slim.enable = true;
  services.xserver.desktopManager.kde4.enable = true;
 
 services.virtualbox.enable = true;
@@ -100,7 +102,7 @@ group = "users";
 uid = 1000;
 createHome = true;
 home = "/home/test";
-shell = "/run/current-system/sw/bin/bash";
+shell = "/run/current-system/sw/bin/fish";
 
 };
 
