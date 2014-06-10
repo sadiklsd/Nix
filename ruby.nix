@@ -1,4 +1,4 @@
-pkgs = import <nixpkgs> {};
+let pkgs = import <nixpkgs> {};
 stdenv = pkgs.stdenv;
 ruby = pkgs.ruby2;
 
@@ -29,6 +29,7 @@ in
                 phases = [ "buildPhase" "installPhase" ];
                 propagatedBuildInputs = [
                         ruby
+                        pkgs.sqlite
                         (gem "bundler")
                 ];
                 buildPhase = ''
@@ -38,3 +39,4 @@ in
                         echo 'install app'
                 '';
         }
+bundle init
