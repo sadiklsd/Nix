@@ -36,7 +36,7 @@ in
                         echo 'building app'
                 '';
                 installPhase = ''
-                        echo 'install app'
+                        echo 'install app'\
+        
                 '';
         }
-bundle init
